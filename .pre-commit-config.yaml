@@ -11,9 +11,14 @@ repos:
       - id: black
         name: Format code with Black
         language_version: python3
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 6.1.0
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.2.0
     hooks:
       - id: flake8
         name: Lint code with Flake8
-        additional_dependencies: [flake8-bugbear, flake8-comprehensions, flake8-typing-imports]
+        additional_dependencies: [flake8]
+  - repo: https://github.com/myint/autoflake
+    rev: v2.2.1  # or latest
+    hooks:
+      - id: autoflake
+        args: [--in-place, --remove-unused-variables, --remove-all-unused-imports]
