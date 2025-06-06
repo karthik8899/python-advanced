@@ -5,5 +5,10 @@ mypy
 pytest==7.1.2
 pytest-cov==4.0.0
 pytest-mock==3.10.0
-flake8
+# flake8
 pre-commit
+ruff
+# Optional: If you want to use coverage for testing
+coverage==6.4.1
+# Optional: If you want to use type checking
+mypy==0.910

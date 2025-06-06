@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]  # E: pycodestyle, F: pyflakes, I: isort
+ignore = ["E501"]  # For example, ignore long lines
+[tool.black]
+line-length = 100
+target-version = ["py310"]
