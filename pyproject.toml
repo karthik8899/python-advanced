@@ -1,3 +1,15 @@
+[project]
+name = "weatherbot"
+version = "0.1.0"
+description = "A simple weather chatbot"
+authors = [{ name="Your Name", email="you@example.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.25.1",
+    "beautifulsoup4>=4.9.3",
+    "python-dotenv>=0.19.0"
+]
+
 [tool.ruff]
 line-length = 100
 select = ["E", "F", "I"]  # E: pycodestyle, F: pyflakes, I: isort
